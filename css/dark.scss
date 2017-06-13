@@ -98,7 +98,7 @@ a {
             &.active {
                 outline: none;
                 a {
-                    background-color: rgba(white, 0.3);
+                    border-bottom: solid 1px $primary;
                     &:hover {
                         color: white;
                     }
@@ -234,6 +234,7 @@ a {
     padding-top: 100px;
 }
 
+
 .picture-section {
     width: 100%;
     height:100%;
@@ -280,6 +281,7 @@ a {
 
 .btn-default {
     border: 1px solid $primary;
+    margin:10px;
     color: $primary;
     background-color: transparent;
     &:hover,
@@ -309,6 +311,7 @@ ul.banner-social-buttons {
 }
 
 footer {
+    background-color: rgba(darkgrey, 0.2);
     padding: 50px 0;
     p {
         margin: 0;
