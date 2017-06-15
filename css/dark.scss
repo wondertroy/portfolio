@@ -129,13 +129,71 @@ a {
 }
 
 .navbar-side {
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     visibility: hidden;
-
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    max-width: 17%;
+    .navbar-toggle {
+        padding: 4px 6px;
+        font-size: 16px;
+        color: white;
+        &:focus,
+        &:active {
+            outline: none;
+        }
+    }
+    .navbar-brand {
+        font-weight: 700;
+        &:focus {
+            outline: none;
+        }
+    }
+    a {
+        color: rgba(white, 0.6);
+    }
+    .nav {
+        li {
+            a {
+                -webkit-transition: background .3s ease-in-out;
+                -moz-transition: background .3s ease-in-out;
+                transition: background .3s ease-in-out;
+                &:hover {
+                    color: rgba(white, 0.8);
+                    outline: none;
+                    background-color: transparent;
+                    font-size: 1.4em;
+                }
+                &:focus,
+                &:active {
+                    outline: none;
+                    background-color: transparent;
+                }
+            }
+            &.active {
+                outline: none;
+                a {
+                    font-size:1.3em;
+                    color: $primary;
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
     @media(min-width:768px) {
+        visibility: visible;
         display: block;
         position: fixed;
         margin: 100px 50px;
     }
+}
+
+.navbar-side li {
+    display: block;
+    clear: left;
 }
 
 .intro {

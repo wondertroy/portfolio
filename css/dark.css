@@ -98,12 +98,53 @@ a {
         border-bottom: 1px solid rgba(255, 255, 255, 0.3); } }
 
 .navbar-side {
-  visibility: hidden; }
+  font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+  visibility: hidden;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+  max-width: 17%; }
+  .navbar-side .navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: white; }
+    .navbar-side .navbar-toggle:focus, .navbar-side .navbar-toggle:active {
+      outline: none; }
+  .navbar-side .navbar-brand {
+    font-weight: 700; }
+    .navbar-side .navbar-brand:focus {
+      outline: none; }
+  .navbar-side a {
+    color: rgba(255, 255, 255, 0.6); }
+  .navbar-side .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out; }
+    .navbar-side .nav li a:hover {
+      color: rgba(255, 255, 255, 0.8);
+      outline: none;
+      background-color: transparent;
+      font-size: 1.4em; }
+    .navbar-side .nav li a:focus, .navbar-side .nav li a:active {
+      outline: none;
+      background-color: transparent; }
+  .navbar-side .nav li.active {
+    outline: none; }
+    .navbar-side .nav li.active a {
+      font-size: 1.3em;
+      color: #f29137; }
+      .navbar-side .nav li.active a:hover {
+        color: #f29137; }
   @media (min-width: 768px) {
     .navbar-side {
+      visibility: visible;
       display: block;
       position: fixed;
       margin: 100px 50px; } }
+
+.navbar-side li {
+  display: block;
+  clear: left; }
 
 .intro {
   display: table;
