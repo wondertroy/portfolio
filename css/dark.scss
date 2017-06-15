@@ -317,6 +317,33 @@ ul.banner-social-buttons {
     }
 }
 
+.date {
+    color: $primary;
+    :first-child {
+        margin: 50px 0 0;
+    }
+}
+
+h1.date {
+    margin:0;
+}
+
+.row {
+    margin-bottom: 50px;
+}
+
+.short, #script {
+    padding-top: 130px;
+    padding-bottom:130px;
+    .row:first-of-type {
+        padding-bottom:130px;
+    }
+}
+
+.tall, #usertestingsection {
+    padding-top: 30px;
+}
+
 footer {
     background-color: rgba(darkgrey, 0.2);
     padding: 50px 0;
@@ -354,29 +381,3 @@ body {
     -webkit-tap-highlight-color: rgba(white, 0.2);
 }
 
-.date {
-    color: $primary;
-    :first-child {
-        margin: 50px 0 0;
-    }
-}
-
- h1.date {
-    margin:0;
-}
-
-.row {
-    margin-bottom: 50px;
-}
-
-.short, #script {
-    padding-top: 130px;
-    padding-bottom:130px;
-    .row:first-of-type {
-        padding-bottom:130px;
-    }
-}
-
-.tall, #usertestingsection {
-    padding-top: 30px;
-}
