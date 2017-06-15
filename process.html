@@ -98,7 +98,7 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <h1 class="brand-heading">Process</h1>
-                    <p class="intro-text">How the hell did I come up with this</p>
+                    <p class="intro-text">The key milestones and decisions I made to develop the core experience and gameplay</p>
                     <br>
                     <p class="intro-text">Woody Hill</p>
                     <a href="#initial-goals" class="btn btn-circle page-scroll">
@@ -124,33 +124,24 @@
 
 <!-- Initial goals Section -->
 <section id="initial-goals" class="container content-section text-center">
+
+
     <div class="row">
         <div class="col-lg-8">
             <h2>First Steps: defining our goals</h2>
             <p>The project began as a challenge to create an interactive space that could be useful in the context of early learning.</p>
             <br>
-            <p> We immediately started thinking of cooperative problem solving exercises, drawing inspiration from games such as portal 2 </p>
+            <p> We immediately started thinking of cooperative problem solving exercises, drawing inspiration from games such as portal 2. </p>
             <br>
-            <p> Illustrated on the right is an early brainstorming concept using a kinect, however this was discarded as it did not use 3d space effectively and was essentially just an interactive surface </p>
+            <p> Illustrated on the right is an early brainstorming concept using a kinect, however this was discarded as it did not use 3d space effectively and was essentially just an interactive surface. </p>
         </div>
         <div class="col-lg-4">
             <img src="img/kinect.jpg">
         </div>
     </div>
-    <a href="#inspirations" class="btn btn-circle page-scroll">
-        <i class="fa fa-angle-double-down animated"></i>
-    </a>
-</section>
 
-
-
-<!-- Inspirations Section -->
-<section id="inspirations" class="container content-section text-center">
     <div class="row">
-        <div class="col-lg-12">
-            <h2>Inspirations</h2>
-            <p>Some inspirations used to further develop ideas</p>
-
+        <div class="col-md-8 col-md-offset-2">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -196,13 +187,15 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-            <a href="#initial-concept" class="btn btn-circle page-scroll">
-                <i class="fa fa-angle-double-down animated"></i>
-            </a>
         </div>
-
+    </div>
+    <div class="row">
+        <a href="#initial-concept" class="btn btn-circle page-scroll">
+            <i class="fa fa-angle-double-down animated"></i>
+        </a>
     </div>
 </section>
+
 
 
 
@@ -220,10 +213,60 @@
     <div class="row">
         <div class="col-lg-10 col-lg-offset-1">
             <img src="img/Sketch.jpg">
-            <a href="#inspirations" class="btn btn-circle page-scroll">
+            <a href="#prototype-dev" class="btn btn-circle page-scroll">
                 <i class="fa fa-angle-double-down animated"></i>
             </a>
         </div>
+    </div>
+</section>
+
+<!-- Date -->
+<section class="container content-section text-center">
+    <div class="row">
+        <div class="col-lg-12">
+            <i class="fa fa-asterisk date"></i>
+            <h1 class="date">3 April 2017</h1>
+            <i class="fa fa-asterisk date"></i>
+        </div>
+    </div>
+</section>
+
+<!-- Prototype Development Section -->
+<section id="prototype-dev" class="container content-section text-center">
+    <div class="row">
+        <div class="col-lg-5">
+            <img src="img/prototype-level.PNG">
+
+        </div>
+        <div class="col-lg-7">
+            <h2>Rapid Prototyping in unity</h2>
+            <p>Prototyping levels was farely simple, as they could easily be built using simple cubes. </p>
+            <p>Once objects were created, they could be saved as prefabs and reused later on which sped up the process of creating levels.</p>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-lg-5">
+            <h2>Scripting behavior</h2>
+            <p>Using prefabs supplied with the steamVR plugin, it was very quick and easy to get the
+                htc vive controllers tracking and interacting with the game. </p>
+            <p>Tags and public variables were used when scripting the cubes to follow the controllers.
+                This allowed any modifications to be done within the unity editor without having to rewrite any code.</p>
+
+            <a href="https://github.com/wondertroy/tmpmpp" class="btn btn-default btn-lg">
+                <i class="fa fa-github fa-fw"></i>
+                <span class="network-name">View project on github</span>
+            </a>
+        </div>
+        <div class="col-lg-7">
+            <img src="img/code.PNG">
+
+        </div>
+    </div>
+    <div class="row">
+        <a href="#user-testing1" class="btn btn-circle page-scroll">
+            <i class="fa fa-angle-double-down animated"></i>
+        </a>
     </div>
 </section>
 
@@ -244,19 +287,28 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <h2>User Testing</h2>
-            <p>Thanks to unity, it was easy to rapidly develop a prototype </p>
+            <p>We needed to make sure that the space would not be too difficult to navigate</p>
             <iframe src="http://www.youtube.com/embed/M1uFzZ1SqzE"
                     width="80%" height="485" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
     <div class="row">
-        <a href="#inspirations" class="btn btn-circle page-scroll">
+        <a href="#feedback1" class="btn btn-circle page-scroll">
             <i class="fa fa-angle-double-down animated"></i>
         </a>
     </div>
 </section>
 
-
+<!-- Date -->
+<section class="container content-section text-center">
+    <div class="row">
+        <div class="col-lg-12">
+            <i class="fa fa-asterisk date"></i>
+            <h1 class="date">1 May 2017</h1>
+            <i class="fa fa-asterisk date"></i>
+        </div>
+    </div>
+</section>
 
 
 <!-- Feedback Section -->
@@ -270,14 +322,14 @@
         <div class="col-lg-6">
             <h2>Feedback</h2>
             <p>While I used VR to demonstrate the prototype, at this point I was still intending to have the planes projected on to the floor and wall and not use VR at all,
-                however it quickly became apparent that using Virtual Reality would provide a more exciting experience</p>
+                however it quickly became apparent that using Virtual Reality would provide a more exciting experience.</p>
             <p>The feedback that we got from the prototype indicated that it looked too difficult and frustrating to navigate.</p>
             <p>For cooperative games it is important that the skill gap is minimised since it can cause negative experience between participants</p>
-            <p>One suggestion was to have separate environments for VR and physical reality that are linked together</p>
+            <p>One suggestion was to have separate environments for VR and physical reality that are linked together.</p>
         </div>
     </div>
     <div class="row">
-        <a href="#inspirations" class="btn btn-circle page-scroll">
+        <a href="#redesign" class="btn btn-circle page-scroll">
             <i class="fa fa-angle-double-down animated"></i>
         </a>
     </div>
@@ -305,7 +357,7 @@
         </div>
     </div>
     <div class="row">
-        <a href="#inspirations" class="btn btn-circle page-scroll">
+        <a href="#refine1" class="btn btn-circle page-scroll">
             <i class="fa fa-angle-double-down animated"></i>
         </a>
     </div>
@@ -315,7 +367,7 @@
 <section id="refine1" class=" container content-section text-center">
     <div class="row">
         <div class="col-lg-6">
-            <h2>Feedback</h2>
+            <h2>Refining for the Exhibit</h2>
             <p>While I used VR to demonstrate the prototype, at this point I was still intending to have the planes projected on to the floor and wall and not use VR at all,
                 however it quickly became apparent that using Virtual Reality would provide a more exciting experience</p>
             <p>The feedback that we got from the prototype indicated that it looked too difficult and frustrating to navigate.</p>
@@ -327,11 +379,6 @@
             <br>
             <img src="img/PRSKETCH.jpg">
         </div>
-    </div>
-    <div class="row">
-        <a href="#inspirations" class="btn btn-circle page-scroll">
-            <i class="fa fa-angle-double-down animated"></i>
-        </a>
     </div>
 </section>
 

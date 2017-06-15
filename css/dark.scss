@@ -1,5 +1,5 @@
 /*
- *code used from https://github.com/BlackrockDigital/startbootstrap-grayscale/tree/master/sass for responsive navbar styling
+ *some code used from https://github.com/BlackrockDigital/startbootstrap-grayscale/tree/master/sass for responsive navbar styling
  */
 @import "variables";
 @import "mixins";
@@ -267,7 +267,7 @@ a {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+        padding-top: 150px;
     }
 
     .picture-section {
@@ -357,4 +357,8 @@ body {
 .date {
     color: $primary;
     margin: 0;
+}
+
+.row {
+    margin-bottom: 50px;
 }
