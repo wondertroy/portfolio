@@ -65,7 +65,7 @@ a {
     border-bottom: 1px solid rgba(white, 0.3);
     text-transform: uppercase;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: rgba($background, 0.5);
+    background-color: $background;
     .navbar-toggle {
         padding: 4px 6px;
         font-size: 16px;
@@ -119,6 +119,7 @@ a {
     }
     @media(min-width:768px) {
         padding: 20px 0;
+        background: $background;
         border-bottom: none;
         letter-spacing: 1px;
         background: transparent;
@@ -127,8 +128,22 @@ a {
         transition: background .5s ease-in-out,padding .5s ease-in-out;
         &.top-nav-collapse {
             padding: 0;
-            background: rgba($background, 0.5);
+            background: $background;
             border-bottom: 1px solid rgba(white, 0.3);
+        }
+    }
+    @media(min-width:1608px) {
+        padding: 20px 0;
+        border-bottom: none;
+        letter-spacing: 1px;
+        background: transparent;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+        &.top-nav-collapse {
+            padding: 0;
+            background: rgba($background, 0.3);
+            border-bottom: none;
         }
     }
 }
@@ -385,6 +400,9 @@ ul.banner-social-buttons {
     color: $primary;
     :first-child {
         margin: 50px 0 0;
+    }
+    @media(min-width:1608px) {
+
     }
 }
 

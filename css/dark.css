@@ -53,7 +53,7 @@ a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
   font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: black; }
   .navbar-dark .navbar-toggle {
     padding: 4px 6px;
     font-size: 16px;
@@ -89,6 +89,7 @@ a {
   @media (min-width: 768px) {
     .navbar-dark {
       padding: 20px 0;
+      background: black;
       border-bottom: none;
       letter-spacing: 1px;
       background: transparent;
@@ -97,8 +98,21 @@ a {
       transition: background .5s ease-in-out,padding .5s ease-in-out; }
       .navbar-dark.top-nav-collapse {
         padding: 0;
-        background: rgba(0, 0, 0, 0.5);
+        background: black;
         border-bottom: 1px solid rgba(255, 255, 255, 0.3); } }
+  @media (min-width: 1608px) {
+    .navbar-dark {
+      padding: 20px 0;
+      border-bottom: none;
+      letter-spacing: 1px;
+      background: transparent;
+      -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+      -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+      transition: background .5s ease-in-out,padding .5s ease-in-out; }
+      .navbar-dark.top-nav-collapse {
+        padding: 0;
+        background: rgba(0, 0, 0, 0.3);
+        border-bottom: none; } }
 
 .navbar-side {
   font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
