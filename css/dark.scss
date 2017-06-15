@@ -1,3 +1,6 @@
+/*
+ *code used from https://github.com/BlackrockDigital/startbootstrap-grayscale/tree/master/sass for responsive navbar styling
+ */
 @import "variables";
 @import "mixins";
 
@@ -29,6 +32,7 @@ h6 {
     letter-spacing: 1px;
 }
 
+
 p {
     margin: 0 0 25px;
     font-size: 18px;
@@ -56,14 +60,7 @@ a {
     font-weight: 400;
 }
 
-
-.navbar-side {
-    display: block;
-    position: fixed;
-    margin: 100px 50px;
-}
-
-.navbar-custom {
+.navbar-dark {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(white, 0.3);
     text-transform: uppercase;
@@ -130,6 +127,17 @@ a {
         }
     }
 }
+
+.navbar-side {
+    visibility: hidden;
+
+    @media(min-width:768px) {
+        display: block;
+        position: fixed;
+        margin: 100px 50px;
+    }
+}
+
 .intro {
     display: table;
     width: 100%;
@@ -257,12 +265,6 @@ a {
     -o-background-size: cover;
 }
 
-#map {
-    width: 100%;
-    height: 200px;
-    margin-top: 100px;
-}
-
 @media(min-width:767px) {
     .content-section {
         padding-top: 250px;
@@ -272,10 +274,6 @@ a {
         padding-top: 250px;
     }
 
-    #map {
-        height: 400px;
-        margin-top: 250px;
-    }
 }
 
 .btn {
@@ -354,4 +352,9 @@ img {
 }
 body {
     -webkit-tap-highlight-color: rgba(white, 0.2);
+}
+
+.date {
+    color: $primary;
+    margin: 0;
 }

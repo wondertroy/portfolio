@@ -30,12 +30,32 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous" defer></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" defer></script>
+
+    <!-- jquery easing plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" defer></script>
+
+    <!-- navbar JavaScript -->
+    <script src="js/responsive-nav.min.js" defer></script>
+
+    <!-- dark styling -->
+    <link href="css/dark.min.css" rel="stylesheet">
+
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
 <!-- Navigation -->
-<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-dark navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
@@ -47,7 +67,7 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+        <div class="collapse navbar-collapse navbar-left navbar-main-collapse">
             <ul class="nav navbar-nav">
 
                 <li class="nav-item active">
@@ -70,6 +90,7 @@
 </nav>
 
 
+
 <!-- Intro Header -->
 <header class="intro" style="background: url(img/camcube.jpg) no-repeat scroll bottom center;background-size: contain;">
     <div class="intro-body">
@@ -89,6 +110,18 @@
     </div>
 </header>
 
+
+<!-- Date -->
+<section class="container content-section text-center">
+    <div class="row">
+        <div class="col-lg-12">
+            <i class="fa fa-asterisk date"></i>
+            <h1 class="date">24 March 2017</h1>
+            <i class="fa fa-asterisk date"></i>
+        </div>
+    </div>
+</section>
+
 <!-- Initial goals Section -->
 <section id="initial-goals" class="container content-section text-center">
     <div class="row">
@@ -104,31 +137,20 @@
             <img src="img/kinect.jpg">
         </div>
     </div>
-    <a href="#initial-concept" class="btn btn-circle page-scroll">
+    <a href="#inspirations" class="btn btn-circle page-scroll">
         <i class="fa fa-angle-double-down animated"></i>
     </a>
 </section>
 
-<!-- Initial-concept Section -->
-<section id="initial-concept" class="content-section text-center">
-        <div class="row">
-            <div class="col-lg-10 col-lg-offset-1">
-                <h2>Collaborative problem solving in an interactive environment</h2>
-                <img src="img/Sketch.jpg">
-                <a href="#exhibit" class="btn btn-circle page-scroll">
-                    <i class="fa fa-angle-double-down animated"></i>
-                </a>
-            </div>
-        </div>
-</section>
 
-<!-- Exhibit Section -->
-<section id="exhibit" class="container content-section text-center">
+
+<!-- Inspirations Section -->
+<section id="inspirations" class="container content-section text-center">
     <div class="row">
         <div class="col-lg-12">
-            <h2>Exhibit</h2>
-            <p>The TMPMRP in action at the edge exhibit 2017.
-            </p>
+            <h2>Inspirations</h2>
+            <p>Some inspirations used to further develop ideas</p>
+
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -140,26 +162,26 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
                     <div class="item active">
-                        <img src="img/exhibit1.jpg" alt="Mother and Son taking the challenge">
+                        <img src="http://www.siliconera.com/wordpress/wp-content/uploads/2011/06/leedmees_04_thumb.jpg" alt="Leedmess Screenshot">
                         <div class="carousel-caption">
-                            <h3>Lights, Camera, Action!</h3>
-                            <p>Mother and son take on the challenge</p>
+                            <h3><a href="https://www.youtube.com/watch?v=8rkGvE4qZkI">Leedmess</a></h3>
+                            <p>A cooperative videogame that uses the kinect where players must help creatures reach a goal using their bodies</p>
                         </div>
                     </div>
 
                     <div class="item">
-                        <img src="img/exhibit2.jpg" alt="Team WATH-P behind the TMPMRP">
+                        <img src="http://jenlewinstudio.com/wp-content/uploads/2016/04/Lewin_still_images_sxsw_2013-1027_credit-950x534.jpg" alt="The Pool">
                         <div class="carousel-caption">
-                            <h3>WATH-P</h3>
-                            <p>The team behind the TMPMRP stands proud</p>
+                            <h3><a href="http://jenlewinstudio.com/the-pool">The Pool</a></h3>
+                            <p>A public interactive space project using pressure pads and lights</p>
                         </div>
                     </div>
 
                     <div class="item">
-                        <img src="img/exhibit3.jpg" alt="DECO3850 Tutors taking the challenge">
+                        <img src="https://i.ytimg.com/vi/1_VMRa8BuwI/maxresdefault.jpg" alt="Portal 2 Screenshot">
                         <div class="carousel-caption">
-                            <h3>Hard Mode</h3>
-                            <p>DECO3850 Tutors take on the hard mode challenge</p>
+                            <h3><a href="https://www.youtube.com/watch?v=A88YiZdXugA">Portal 2</a></h3>
+                            <p>An outstanding example of a good cooperative game based on problem solving</p>
                         </div>
                     </div>
                 </div>
@@ -174,11 +196,145 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
+            <a href="#initial-concept" class="btn btn-circle page-scroll">
+                <i class="fa fa-angle-double-down animated"></i>
+            </a>
+        </div>
+
+    </div>
+</section>
 
 
+
+<!-- Initial-concept Section -->
+<section id="initial-concept" class="content-section text-center">
+
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+            <h2>Multi-Planar Maze</h2>
+            <p>A refined concept for an interactive space that translates 3d area in to two 2d planes.</p>
+            <p>The initial thinking was that the planes would be projected on to the wall and floor of the play area.</p>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+            <img src="img/Sketch.jpg">
+            <a href="#inspirations" class="btn btn-circle page-scroll">
+                <i class="fa fa-angle-double-down animated"></i>
+            </a>
         </div>
     </div>
 </section>
+
+
+<!-- Date -->
+<section class="container content-section text-center">
+    <div class="row">
+        <div class="col-lg-12">
+            <i class="fa fa-asterisk date"></i>
+            <h1 class="date">26 April 2017</h1>
+            <i class="fa fa-asterisk date"></i>
+        </div>
+    </div>
+</section>
+
+<!-- Initial-concept Section -->
+<section id="user-testing1" class="content-section text-center">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h2>User Testing</h2>
+            <p>Thanks to unity, it was easy to rapidly develop a prototype </p>
+            <iframe src="http://www.youtube.com/embed/M1uFzZ1SqzE"
+                    width="80%" height="485" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="row">
+        <a href="#inspirations" class="btn btn-circle page-scroll">
+            <i class="fa fa-angle-double-down animated"></i>
+        </a>
+    </div>
+</section>
+
+
+
+
+<!-- Feedback Section -->
+<section id="feedback1" class=" container content-section text-center">
+    <div class="row">
+        <div class="col-lg-6">
+            <img src="img/revised-concept.jpg">
+            <br>
+            <img src="img/PRSKETCH.jpg">
+        </div>
+        <div class="col-lg-6">
+            <h2>Feedback</h2>
+            <p>While I used VR to demonstrate the prototype, at this point I was still intending to have the planes projected on to the floor and wall and not use VR at all,
+                however it quickly became apparent that using Virtual Reality would provide a more exciting experience</p>
+            <p>The feedback that we got from the prototype indicated that it looked too difficult and frustrating to navigate.</p>
+            <p>For cooperative games it is important that the skill gap is minimised since it can cause negative experience between participants</p>
+            <p>One suggestion was to have separate environments for VR and physical reality that are linked together</p>
+        </div>
+    </div>
+    <div class="row">
+        <a href="#inspirations" class="btn btn-circle page-scroll">
+            <i class="fa fa-angle-double-down animated"></i>
+        </a>
+    </div>
+</section>
+
+<!-- Date -->
+<section class="container content-section text-center">
+    <div class="row">
+        <div class="col-lg-12">
+            <i class="fa fa-asterisk date"></i>
+            <h1 class="date">7 May 2017</h1>
+            <i class="fa fa-asterisk date"></i>
+        </div>
+    </div>
+</section>
+
+<!-- increment Section -->
+<section id="redesign" class=" content-section text-center">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h2>Incremental Prototyping</h2>
+            <p>The revised concept was easy to test since the level in unity only had to be slightly modified. </p>
+            <iframe width="80%" height="485" src="https://www.youtube.com/embed/uPhngHLPpOw?rel=0"
+                    frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="row">
+        <a href="#inspirations" class="btn btn-circle page-scroll">
+            <i class="fa fa-angle-double-down animated"></i>
+        </a>
+    </div>
+</section>
+
+<!-- Refining Section -->
+<section id="refine1" class=" container content-section text-center">
+    <div class="row">
+        <div class="col-lg-6">
+            <h2>Feedback</h2>
+            <p>While I used VR to demonstrate the prototype, at this point I was still intending to have the planes projected on to the floor and wall and not use VR at all,
+                however it quickly became apparent that using Virtual Reality would provide a more exciting experience</p>
+            <p>The feedback that we got from the prototype indicated that it looked too difficult and frustrating to navigate.</p>
+            <p>For cooperative games it is important that the skill gap is minimised since it can cause negative experience between participants</p>
+            <p>One suggestion was to have separate environments for VR and physical reality that are linked together</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="img/revised-concept.jpg">
+            <br>
+            <img src="img/PRSKETCH.jpg">
+        </div>
+    </div>
+    <div class="row">
+        <a href="#inspirations" class="btn btn-circle page-scroll">
+            <i class="fa fa-angle-double-down animated"></i>
+        </a>
+    </div>
+</section>
+
 
 <div class="content-section">
     <div class="row">
@@ -208,18 +364,6 @@
 
 
 </footer>
-
-<!-- jQuery -->
-<script src="vendor/jquery/jquery.js"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-<!-- Plugin JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-<!-- Theme JavaScript -->
-<script src="js/dark.min.js"></script>
 
 </body>
 
