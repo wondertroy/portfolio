@@ -65,7 +65,7 @@ a {
     border-bottom: 1px solid rgba(white, 0.3);
     text-transform: uppercase;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: $background;
+    background-color: rgba($background, 0.5);
     .navbar-toggle {
         padding: 4px 6px;
         font-size: 16px;
@@ -81,6 +81,11 @@ a {
             outline: none;
         }
     }
+    .navbar-header, .navbar-nav {
+        margin-left:50px;
+        margin-right: 50px;
+    }
+
     a {
         color: white;
     }
@@ -122,7 +127,7 @@ a {
         transition: background .5s ease-in-out,padding .5s ease-in-out;
         &.top-nav-collapse {
             padding: 0;
-            background: $background;
+            background: rgba($background, 0.5);
             border-bottom: 1px solid rgba(white, 0.3);
         }
     }
@@ -204,7 +209,7 @@ a {
     padding: 100px 0;
     text-align: center;
     color: white;
-    background: $background url(../img/cubes.PNG) no-repeat scroll bottom center;
+    background: $background url(../img/cubes.PNG) no-repeat scroll top center;
     -webkit-background-size: contain;
     -moz-background-size: contain;
     background-size: contain;

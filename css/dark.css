@@ -53,7 +53,7 @@ a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
   font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-  background-color: black; }
+  background-color: rgba(0, 0, 0, 0.5); }
   .navbar-dark .navbar-toggle {
     padding: 4px 6px;
     font-size: 16px;
@@ -64,6 +64,9 @@ a {
     font-weight: 700; }
     .navbar-dark .navbar-brand:focus {
       outline: none; }
+  .navbar-dark .navbar-header, .navbar-dark .navbar-nav {
+    margin-left: 50px;
+    margin-right: 50px; }
   .navbar-dark a {
     color: white; }
   .navbar-dark .nav li a {
@@ -94,7 +97,7 @@ a {
       transition: background .5s ease-in-out,padding .5s ease-in-out; }
       .navbar-dark.top-nav-collapse {
         padding: 0;
-        background: black;
+        background: rgba(0, 0, 0, 0.5);
         border-bottom: 1px solid rgba(255, 255, 255, 0.3); } }
 
 .navbar-side {
@@ -154,7 +157,7 @@ a {
   padding: 100px 0;
   text-align: center;
   color: white;
-  background: black url(../img/cubes.PNG) no-repeat scroll bottom center;
+  background: black url(../img/cubes.PNG) no-repeat scroll top center;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   background-size: contain;
