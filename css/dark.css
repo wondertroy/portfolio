@@ -103,7 +103,8 @@ a {
   margin-bottom: 0;
   text-transform: uppercase;
   font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-  max-width: 17%; }
+  max-width: 17%;
+  display: none; }
   .navbar-side .navbar-toggle {
     padding: 4px 6px;
     font-size: 16px;
@@ -135,12 +136,12 @@ a {
       color: #f29137; }
       .navbar-side .nav li.active a:hover {
         color: #f29137; }
-  @media (min-width: 768px) {
+  @media (min-width: 1608px) {
     .navbar-side {
       visibility: visible;
-      display: block;
       position: fixed;
-      margin: 100px 50px; } }
+      margin: 100px 50px;
+      display: block; } }
 
 .navbar-side li {
   display: block;

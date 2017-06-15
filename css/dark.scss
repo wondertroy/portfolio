@@ -135,6 +135,7 @@ a {
     text-transform: uppercase;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     max-width: 17%;
+    display: none;
     .navbar-toggle {
         padding: 4px 6px;
         font-size: 16px;
@@ -183,11 +184,11 @@ a {
             }
         }
     }
-    @media(min-width:768px) {
+    @media(min-width:1608px) {
         visibility: visible;
-        display: block;
         position: fixed;
         margin: 100px 50px;
+        display: block;
     }
 }
 
